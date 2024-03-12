@@ -16,7 +16,15 @@ void rev(char str[]) {
         i++;
         j--;
     }
-    printf("%s",str);
+    printf(" two pointer approach%s",str);
+    int n =atoi(str);
+    int rev =0;
+    while(n!=0){
+        rev = rev*10 + n%10;
+        n = n/10;
+    }
+    printf(" re- reverse  of the number is %d",rev);
+    
 }
 
 int main(int argc, char *argv[]) {
